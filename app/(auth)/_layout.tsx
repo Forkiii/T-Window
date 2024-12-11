@@ -24,6 +24,12 @@ export  const styles = StyleSheet.create({
     alignItems: "center", 
     
   },
+  footer:{
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection:"row",
+    bottom:0
+  },
   headingOne: {
     fontSize: 40,
     color: colors.text,
