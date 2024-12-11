@@ -1,7 +1,7 @@
 import { Stack } from "expo-router";
 import React, { ReactNode } from "react";
 import { StyleSheet } from "react-native";
-import colors from "../constants/colors";
+import colors from "../../constants/colors";
 
 
 interface RootLayoutProps {
