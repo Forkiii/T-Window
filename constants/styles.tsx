@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import colors from "./colors";
+
 export const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.background,
@@ -7,38 +8,60 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
-    paddingHorizontal: 16, // Add padding to prevent clipping
-    paddingTop: 20,        // Add padding for top inset
+    paddingHorizontal: 16, 
+    paddingTop: 20,
+  },
+  label: {
+    marginBottom: 5,
+  },
+  labelCenter: {
+    textAlign: "center",
+    paddingTop: 20,
+  },
+  inputField:{
+    marginBottom: 20
+  },
+  header:{
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection:"row",
+    top: 0,
+  },
+  footer:{
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection:"row",
+    bottom:0
   },
   headingOne: {
-    fontSize: 40,
+    fontSize: 38,
     color: colors.text,
     fontFamily: "Kanit",
     position: "fixed",
   },
   headingThree: {
-    fontSize: 40,
+    fontSize: 37,
     color: colors.text,
     fontFamily: "Kanit",
   },
 
   headingTwo: {
-    fontSize: 40,
+    fontSize: 36,
     color: colors.text,
     fontFamily: "Kanit",
   },
   paragraphOne: {
-    fontSize: 12,
+    fontSize: 18,
     color: colors.text,
     fontFamily: "Kanit",
   },
   paragraphTwo: {
-    fontSize: 11,
+    fontSize: 17,
     color: colors.text,
     fontFamily: "Kanit",
   },
   paragraphThree: {
-    fontSize: 10,
+    fontSize: 16,
     color: colors.text,
     fontFamily: "Kanit",
   },

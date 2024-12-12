@@ -2,12 +2,17 @@
 import { Link } from "expo-router";
 import React from "react";
 import { Text, View } from "react-native";
-import { styles } from './_layout';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { styles } from '../constants/styles';
 export default function Index() {
   return (
+   
+       
     <View style={styles.container} >
-      <Text style={styles.headingOne}>Index</Text>
-      <Link href={'../SignIn'}><Text style={styles.paragraphOne}>gotosignin</Text></Link>
+      <SafeAreaView> 
+      </SafeAreaView>
+      <Link href={'../SignIn'}><Text
+      style={[styles.headingTwo]}>gotosignin</Text></Link>
     </View>
   );
 } 

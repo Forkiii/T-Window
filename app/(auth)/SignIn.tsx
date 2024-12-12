@@ -1,19 +1,35 @@
 import { Link } from 'expo-router';
 import React from 'react';
-import { Text, View } from 'react-native';
-import { Line } from 'react-native-svg';
-import Group from '../../assets/Group';
-import HomeIcon from '../../assets/Home';
-import Profile from '../../assets/Profile';
-import { styles } from './_layout';
+import { Pressable, Text, View } from 'react-native';
+import Line from '../../assets/Line';
+import { styles } from '../../constants/styles';
 export default function SignIn() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.headingOne}>SignIn</Text>
-<Link href={'../'}><Text style={styles.paragraphOne}></Text></Link>
-  <View style={styles.footer} >
-      <HomeIcon></HomeIcon> <Profile></Profile> <Group></Group> <Line></Line>
+    <View style={[styles.container]} >
+
+    {/* Username */}
+      <Link href={'../'}><Text style={styles.paragraphOne}></Text></Link>
+      <View style={styles.inputField}>
+        <Text style={[styles.paragraphOne, styles.label]}>Username</Text>
+        <Line></Line>
       </View>
-    </View>
+      ;
+    {/* Pass */}
+      <View style={styles.inputField}>
+        <Text style={[styles.paragraphOne, styles.label]}>Password</Text>
+        <Line ></Line>  </View>
+    {/* Confirm Pass */}
+      <View style={styles.inputField}>
+        <Text style={[styles.paragraphOne, styles.label]}>Confirm Password</Text>
+        <Line></Line> 
+         </View>
+
+         <Pressable 
+
+         >
+  <Text style={styles.paragraphOne}> I'm pressable!</Text>
+</Pressable>
+<Text style={[styles.paragraphThree, styles.labelCenter]}> Already have an account?</Text>
+    </View> 
   )
 }
