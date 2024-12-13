@@ -1,16 +1,22 @@
-import {Pressable, StyleSheet, Text, View } from 'react-native'
-import colors from '../constants/colors'
-import React from 'react'
-
+import { default as React, useState } from 'react';
+import { Pressable, StyleSheet, Text } from 'react-native';
+import colors from '../constants/colors';
 const Button = (props) => {
+  const [isPressed, setIsPressed] = useState(false);
   return (
-      <Pressable style={styles.container} onPress={() => alert('pressed')}>
-        <Text style={styles.btnText}>{props.buttonText}</Text>
-      </Pressable>
-    
-  )
-}
-
+    <Pressable
+    onPressIn={() =>{
+      setIsPressed(true)}}
+    onPressOut={() => {
+      setTimeout(() => {
+        setIsPressed(false);
+      }, 10); 
+    }}
+      style={isPressed ? [styles.container, styles.btnPressed] : styles.container}  >
+      <Text style={styles.btnText}>{props.buttonText}</Text>
+    </Pressable>
+  );
+};
 export default Button
 
 const styles = StyleSheet.create({
@@ -21,9 +27,12 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         padding:10,
     },
+    btnPressed:{
+      backgroundColor: `${colors.secondary}`,
+    },
     btnText:{
         textAlign:'center',
+        fontFamily:"Kanit",
         color:`${colors.text}`,
-
     }
 })
