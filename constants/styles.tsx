@@ -8,6 +8,17 @@ export const styles = StyleSheet.create({
     alignItems: "center", 
     backgroundColor: colors.background,
   },
+
+
+// TEXT INPUT
+  
+inputLine:{
+  width: "80%",
+  borderBottomWidth:1,
+  borderBlockColor:colors.accent,
+ 
+  
+  },
   inputWrapper: {
     width: "80%",
     alignItems: "center", 
@@ -16,6 +27,11 @@ export const styles = StyleSheet.create({
   inputSpacing: {
     marginTop: 16,
   },
+
+
+
+
+  // Button
   buttonSpacing: {
     marginTop: 16,
   },
@@ -23,14 +39,19 @@ export const styles = StyleSheet.create({
     textAlign: "center", 
   },
   input: {
-    position: "sticky",
-    width: "22%",
+    width: "auto",
     height: "auto", 
-    textAlign:"justify", 
-    color: colors.text, 
-    fontSize: 16,
-    fontFamily: "Kanit",
+    textAlign:"left", 
+    color: colors.text,
   },
+
+
+
+
+
+
+
+  //Headers Footers
   header: {
     alignItems: "center",
     justifyContent: "center",
@@ -45,6 +66,14 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     marginTop: 16,
   },
+
+
+
+
+
+
+
+  //TEXT
   headingOne: {
     fontSize: 38,
     color: colors.text,
@@ -84,4 +113,6 @@ export const styles = StyleSheet.create({
     marginTop: 16,
     textAlign: "center",
   },
+
+
 });
