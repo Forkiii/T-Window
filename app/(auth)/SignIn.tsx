@@ -13,11 +13,14 @@ export default function SignIn() {
     <SafeAreaView style={[styles.container]}>
       {/* Input Fields */}
     
+        
       <View style={[styles.inputWrapper, styles.inputSpacing]}>
+        
         <Text style={[styles.paragraphOne]}>Username</Text>
         <TextInput
-          style={[styles.inputLine,styles.input]}
-          placeholder="Input"
+        
+          style={[styles.inputLine,styles.input,styles.paragraphTwo]}
+       
           placeholderTextColor={colors.text}
         />
            
@@ -25,8 +28,8 @@ export default function SignIn() {
         {/* Overlay the input */}
         <Text style={[styles.paragraphOne, styles.inputSpacing]}>Password</Text>
         <TextInput
-          style={[styles.inputLine,styles.input]}
-          placeholder="Input"
+          style={[styles.inputLine,styles.input,styles.paragraphTwo]}
+          secureTextEntry={true}
           placeholderTextColor={colors.text}
         />
            
@@ -35,7 +38,7 @@ export default function SignIn() {
         </Text>
         <TextInput
           style={[styles.inputLine,styles.input, styles.paragraphTwo]}
-          placeholder="Input"
+          secureTextEntry={true}
           placeholderTextColor={colors.text}
         />
            

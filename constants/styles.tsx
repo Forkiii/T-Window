@@ -12,23 +12,21 @@ export const styles = StyleSheet.create({
 
 // TEXT INPUT
   
+
+
 inputLine:{
-  width: "80%",
+
   borderBottomWidth:1,
-  borderBlockColor:colors.accent,
- 
-  
+  borderColor:colors.accent,
+  width: "100%",
   },
   inputWrapper: {
-    width: "80%",
     alignItems: "center", 
     marginBottom: 16, 
   },
   inputSpacing: {
-    marginTop: 16,
+    marginTop: 20,
   },
-
-
 
 
   // Button
@@ -96,14 +94,12 @@ inputLine:{
     fontSize: 18,
     color: colors.text,
     fontFamily: "Kanit",
-    textAlign: "center", 
     marginBottom: 8,
   },
   paragraphTwo: {
     fontSize: 17,
     color: colors.text,
     fontFamily: "Kanit",
-    textAlign: "center",
     marginBottom: 8,
   },
   paragraphThree: {
@@ -111,7 +107,6 @@ inputLine:{
     color: colors.text,
     fontFamily: "Kanit",
     marginTop: 16,
-    textAlign: "center",
   },
 
 
