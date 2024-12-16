@@ -1,15 +1,17 @@
 import { Stack } from "expo-router";
 import React, { ReactNode } from "react";
+import { styles } from "../constants/styles";
+import { View } from "react-native";
 
 interface RootLayoutProps {
   children: ReactNode; 
 }
 
-const RootLayout = ({ children }: RootLayoutProps) => {
+export default function RootLayout  ({ children }: RootLayoutProps) {
 
   return (
-    <Stack>
-      <Stack.Screen options={{headerShown:true}} />
-    </Stack>
+    <View style={styles.container}>
+      <Stack  />
+    </View>
   );
 };

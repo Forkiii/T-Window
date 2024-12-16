@@ -7,6 +7,7 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center", 
     backgroundColor: colors.background,
+    fontFamily: "Kanit",
   },
 
 
@@ -59,10 +60,13 @@ inputLine:{
     width: "100%",
   },
   footer: {
+    width:"100%",
+    position:"absolute",
+    bottom:0,
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "row",
-    marginTop: 16,
+    
   },
 
 
