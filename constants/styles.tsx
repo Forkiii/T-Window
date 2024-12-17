@@ -4,8 +4,10 @@ import colors from "./colors";
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
+   alignItems: "center",
     justifyContent: "center", 
     backgroundColor: colors.background,
+
     fontFamily: "Kanit",
   },
 
@@ -70,7 +72,7 @@ inputLine:{
 
 
 center:{
- justifyContent: "center",
+ alignContent: "center",
 },
 
 

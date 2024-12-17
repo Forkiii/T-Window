@@ -5,7 +5,7 @@ import { styles } from '../../constants/styles'
 const profile = () => {
   return (
      <View  style={styles.container}>
-        <Text>home</Text>
+        <Text>Profile</Text>
       </View>
   )
 }
