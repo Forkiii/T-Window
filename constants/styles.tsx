@@ -69,9 +69,9 @@ inputLine:{
   },
 
 
-
-
-
+center:{
+ justifyContent: "center",
+},
 
 
   //TEXT

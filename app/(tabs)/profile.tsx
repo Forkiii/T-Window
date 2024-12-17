@@ -2,12 +2,12 @@ import React from 'react'
 import { Text, View } from 'react-native'
 import { styles } from '../../constants/styles'
 
-const home = () => {
+const profile = () => {
   return (
-    <View  style={styles.container}>
-      <Text>home</Text>
-    </View>
+     <View  style={styles.container}>
+        <Text>home</Text>
+      </View>
   )
 }
 
-export default home
+export default profile
