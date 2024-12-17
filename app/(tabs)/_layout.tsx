@@ -1,52 +1,25 @@
-import { View, Text, Image } from "react-native";
-import { Tabs, Redirect } from "expo-router";
-import React from "react";
-import Group from "../../assets/Group";
+import FontAwesome from '@expo/vector-icons/FontAwesome';
+import { Tabs } from 'expo-router';
+import React from 'react';
+import { View } from 'react-native';
+import { styles } from '../../constants/styles';
 
-const TabsLayout = () => {
-  const tabIcon = ({ icon, color, name, focused }) => {
-    return (
-      <View>
-        <Image src="" />
-      </View>
-    );
-  };
-
+export default function TabLayout() {
   return (
     <>
-      <Tabs>
-        <Tabs.Screen
-          name="home"
-          options={{
-            title: "Home",
-            headerShown: false,
-            // tabBarIcon:({color, focused}) => (
-            // )
-          }}
-        />
+    <View style={styles.container}>
+  
+        <Tabs screenOptions={{ tabBarActiveTintColor: 'red', headerShown: false }}>
+          <Tabs.Screen
+            name="index"
+            options={{
+              title: 'Home',
+              tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
+            }} />
 
-        <Tabs.Screen
-          name="socials"
-          options={{
-            title: "Home",
-            headerShown: false,
-            // tabBarIcon:({color, focused}) => (
-            // )
-          }}
-        />
-
-        <Tabs.Screen
-          name="profile"
-          options={{
-            title: "Home",
-            headerShown: false,
-            // tabBarIcon:({color, focused}) => (
-            // )
-          }}
-        />
-      </Tabs>
+        </Tabs>
+        </View>
     </>
+    
   );
-};
-
-export default TabsLayout;
+}
