@@ -11,7 +11,7 @@ export default function Index() {
     <View style={styles.container} >
       <SafeAreaView> 
       </SafeAreaView>
-      <Link href={'../SignIn'}><Text
+      <Link href={'../SignUp'}><Text
       style={[styles.headingTwo]}>gotosignin</Text></Link>
     </View>
   );
