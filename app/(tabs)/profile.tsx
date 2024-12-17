@@ -5,7 +5,7 @@ import { styles } from '../../constants/styles'
 const profile = () => {
   return (
      <View  style={styles.container}>
-        <Text>Profile</Text>
+        <Text style={[styles.headingOne]}>Profile</Text>
       </View>
   )
 }

@@ -5,7 +5,7 @@ import { styles } from '../../constants/styles'
 const socials = () => {
   return (
      <View style={styles.container}>
-        <Text>Socials</Text>
+         <Text style={[styles.headingOne]}>Socials</Text>
       </View>
   )
 }

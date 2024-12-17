@@ -44,7 +44,10 @@ export default function SignUp() {
       </View>
 
       {/* Button  */}
-      <Button buttonText="Sign up" style={styles.buttonSpacing} />
+      <Link href={"../home"}>
+      <Button buttonText="Sign Up" style={styles.buttonSpacing}
+      />
+      </Link>
   
         <Link href={"../SignIn"} style={[styles.paragraphThree, styles.labelCenter]}> 
         Already have an account?

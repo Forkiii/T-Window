@@ -5,9 +5,8 @@ import { styles } from '../../constants/styles'
 const home = () => {
   return (
     <View  style={styles.container}>
-      <Text>home</Text>
+      <Text style={[styles.headingOne]}>Home</Text>
     </View>
   )
 }
-
-export default home
+export default home 

@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import React from "react";
 import { SafeAreaView, Text, TextInput, View } from "react-native";
 import Button from "../../components/button";
@@ -5,9 +6,6 @@ import colors from "../../constants/colors";
 import { styles } from "../../constants/styles";
 
 export default function SignIn() {
-  function setText(text: string): void {
-    throw new Error("Function not implemented.");
-  }
 
   return (
     <SafeAreaView style={[styles.container]}>
@@ -32,25 +30,23 @@ export default function SignIn() {
           secureTextEntry={true}
           placeholderTextColor={colors.text}
         />
-           
-        <Text style={[styles.paragraphOne, styles.inputSpacing]}>
-          Confirm Password
-        </Text>
-        <TextInput
-          style={[styles.inputLine,styles.input, styles.paragraphTwo]}
-          secureTextEntry={true}
-          placeholderTextColor={colors.text}
-        />
-           
-       
       </View>
 
       {/* Button  */}
-      <Button buttonText="Sign up" style={styles.buttonSpacing} />
+      <Link href={"../home"}>
+      <Button buttonText="Sign In" style={styles.buttonSpacing}
+      />
+      </Link>
+
+
+
+
+
+        <Link href={"../SignUp"} style={[styles.paragraphThree, styles.labelCenter]}> 
       <Text style={[styles.paragraphThree, styles.labelCenter]}>
-        Already have an account?
+        Don't have an account?
       </Text>
- 
+    </Link>
       
     </SafeAreaView>
   );
